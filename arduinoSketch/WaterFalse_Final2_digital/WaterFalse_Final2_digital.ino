@@ -31,27 +31,27 @@ float avgScale = 0.95;
 
 
 /* light testing */
-//light 1, normalOn:63, 400-845,
-//light 2, normalOn: 16, 625-725,
-//light 3, normalOn: 33, 430-890,
-//light 4, normalOn: 35, 480-738,
+//light 1, normalOn:63, 50-820,
+//light 2, normalOn: 16, 30-400,
+//light 3, normalOn: 33, 50-800,
+//light 4, normalOn: 35, 80-650,
 
 //need to adjust | influenced by environmental light
-int light1Min = 400;
-int light1Max = 845;
-int light2Min = 625;
-int light2Max = 725;
-int light3Min = 430;
-int light3Max = 890;
-int light4Min = 480;
-int light4Max = 738;
+int light1Min = 50;
+int light1Max = 820;
+int light2Min = 30;
+int light2Max = 400;
+int light3Min = 50;
+int light3Max = 800;
+int light4Min = 80;
+int light4Max = 650;
 /*normal status, with yellow led off*/
 //if min number is a lot more then 100, set normal to 100 or even higher
 //but print the button value in arduino side first before confirm the number
-int normalOn1 = 100;
-int normalOn2 = 70;
-int normalOn3 = 70;
-int normalOn4 = 100;
+int normalOn1 = 60;
+int normalOn2 = 50;
+int normalOn3 = 50;
+int normalOn4 = 50;
 
 boolean module1NotActivated = true;
 boolean module2NotActivated = true;
