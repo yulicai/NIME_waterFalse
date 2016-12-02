@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 0,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 232.0, 79.0, 895.0, 639.0 ],
+		"rect" : [ 166.0, 133.0, 1161.0, 855.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,9 +54,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 518.5, 123.0, 85.0, 22.0 ],
+					"patching_rect" : [ 518.5, 124.533356, 85.0, 22.0 ],
 					"style" : "",
-					"text" : "loadmess 150"
+					"text" : "loadmess 140"
 				}
 
 			}
@@ -259,9 +259,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1887.0, 818.0, 171.0, 22.0 ],
+					"patching_rect" : [ 1887.0, 818.0, 178.0, 22.0 ],
 					"style" : "",
-					"text" : "if $i1>80 && $i1 <650 then $i1"
+					"text" : "if $i1>350 && $i1 <730 then $i1"
 				}
 
 			}
@@ -459,9 +459,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2078.066895, 727.0, 135.0, 22.0 ],
+					"patching_rect" : [ 2078.066895, 727.0, 142.0, 22.0 ],
 					"style" : "",
-					"text" : "if $i1 > 60 then 1 else 0"
+					"text" : "if $i1 > 230 then 1 else 0"
 				}
 
 			}
@@ -498,9 +498,9 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1887.0, 851.0, 119.0, 22.0 ],
+					"patching_rect" : [ 1887.0, 851.0, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "scale 650 80 40 140"
+					"text" : "scale 730 350 40 140"
 				}
 
 			}
@@ -728,9 +728,9 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1338.5, 721.0, 112.0, 22.0 ],
+					"patching_rect" : [ 1338.5, 721.0, 119.0, 22.0 ],
 					"style" : "",
-					"text" : "scale 50 800 40 90"
+					"text" : "scale 370 850 40 90"
 				}
 
 			}
@@ -743,7 +743,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 1382.0, 794.5, 31.0, 22.0 ],
 					"style" : "",
-					"text" : "- 50"
+					"text" : "- 60"
 				}
 
 			}
@@ -1051,9 +1051,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1338.5, 693.0, 168.0, 22.0 ],
+					"patching_rect" : [ 1338.5, 693.0, 175.0, 22.0 ],
 					"style" : "",
-					"text" : "if $i1>50 && $i1<800 then $i1"
+					"text" : "if $i1>370 && $i1<850 then $i1"
 				}
 
 			}
@@ -1088,9 +1088,9 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 593.0, 808.0, 109.0, 22.0 ],
+					"patching_rect" : [ 593.0, 808.0, 116.0, 22.0 ],
 					"style" : "",
-					"text" : "scale 400 30 9 -19"
+					"text" : "scale 400 250 9 -19"
 				}
 
 			}
@@ -1252,7 +1252,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 757.083374, 684.0, 135.0, 22.0 ],
 					"style" : "",
-					"text" : "if $i1 > 40 then 1 else 0"
+					"text" : "if $i1 > 60 then 1 else 0"
 				}
 
 			}
@@ -1711,9 +1711,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 171.583344, 680.0, 135.0, 22.0 ],
+					"patching_rect" : [ 171.583344, 680.0, 142.0, 22.0 ],
 					"style" : "",
-					"text" : "if $i1 > 30 then 1 else 0"
+					"text" : "if $i1 > 340 then 1 else 0"
 				}
 
 			}
@@ -1763,9 +1763,9 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 43.0, 842.666626, 112.0, 22.0 ],
+					"patching_rect" : [ 43.0, 842.666626, 119.0, 22.0 ],
 					"style" : "",
-					"text" : "scale 50 820 0 140"
+					"text" : "scale 350 800 0 140"
 				}
 
 			}
@@ -2004,8 +2004,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2245,8 +2245,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2816,8 +2816,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -3336,8 +3336,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -3589,8 +3589,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4109,8 +4109,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4350,8 +4350,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4591,8 +4591,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -5629,8 +5629,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -6287,8 +6287,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -6694,9 +6694,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "" ],
-									"patching_rect" : [ 72.0, 134.0, 76.0, 22.0 ],
+									"patching_rect" : [ 72.0, 134.0, 79.0, 22.0 ],
 									"style" : "",
-									"text" : "serial f 9600"
+									"text" : "serial c 9600"
 								}
 
 							}
@@ -9078,12 +9078,12 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "shift_pfft.maxpat",
-				"bootpath" : "~/GitHub/NIME_waterFalse/maxPatch",
+				"bootpath" : "~/Downloads/NIME_waterFalse-master/maxPatch",
 				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
-		"autosave" : 0
+		"embedsnapshot" : 0
 	}
 
 }
