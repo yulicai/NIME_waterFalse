@@ -28,30 +28,31 @@ int rawLight1, rawLight2, rawLight3, rawLight4;
 //led varibles for holding averaged values
 int light1, light2, light3, light4;
 float avgScale = 0.95;
+int normalStateBuffer = 50;
 
 
 /* light testing */
-//light 1, normalOn:320, 350-800,
-//light 2, normalOn: 40, 250-400,
-//light 3, normalOn: 340, 370-850,
-//light 4, normalOn: 200, 350-730,
+//light 1, normalOn:63, 400-845,
+//light 2, normalOn: 16, 625-725,
+//light 3, normalOn: 33, 430-890,
+//light 4, normalOn: 35, 480-738,
 
 //need to adjust | influenced by environmental light
-int light1Min = 350;
-int light1Max = 800;
-int light2Min = 250;
-int light2Max = 400;
-int light3Min = 370;
-int light3Max = 850;
-int light4Min = 350;
-int light4Max = 730;
+int light1Min = 400;
+int light1Max = 845;
+int light2Min = 625;
+int light2Max = 725;
+int light3Min = 430;
+int light3Max = 890;
+int light4Min = 480;
+int light4Max = 738;
 /*normal status, with yellow led off*/
 //if min number is a lot more then 100, set normal to 100 or even higher
 //but print the button value in arduino side first before confirm the number
-int normalOn1 = 320;
-int normalOn2 = 40;
-int normalOn3 = 340;
-int normalOn4 = 200;
+int normalOn1 = 100;
+int normalOn2 = 70;
+int normalOn3 = 70;
+int normalOn4 = 100;
 
 boolean module1NotActivated = true;
 boolean module2NotActivated = true;
@@ -100,7 +101,7 @@ void loop() {
   /*module one*/
   /////////////////////////
   //normal yellow led on, no pulling, led strip should be off
-  if (light1 > normalOn1 - 70 && light1 < normalOn1 + 70) {
+  if (light1 > normalOn1 - normalStateBuffer && light1 < normalOn1 + normalStateBuffer) {
     ledBrightness1 = 0;
     module1NotActivated = true;
     button1 = false;
@@ -118,7 +119,7 @@ void loop() {
   /*module two*/
   /////////////////////////
   //normal yellow led on, no pulling, led strip should be off
-  if (light2 > normalOn2 - 70 && light2 < normalOn2 + 70) {
+  if (light2 > normalOn2 - normalStateBuffer && light2 < normalOn2 + normalStateBuffer) {
     ledBrightness2 = 0;
     module2NotActivated = true;
     button2 = false;
@@ -138,7 +139,7 @@ void loop() {
   /*module three*/
   /////////////////////////
   //normal yellow led on, no pulling, led strip should be off
-  if (light3 > normalOn3 - 70 && light3 < normalOn3 + 70) {
+  if (light3 > normalOn3 - normalStateBuffer && light3 < normalOn3 + 7normalStateBuffer0) {
     ledBrightness3 = 0;
     module3NotActivated = true;
     button3 = false;
@@ -158,7 +159,7 @@ void loop() {
   /////////////////////////
   //fan mode special, using digital pin 4 instead
   //normal yellow led on, no pulling, led strip should be off
-  if (light4 > normalOn4 - 70 && light4 < normalOn4 + 70) {
+  if (light4 > normalOn4 - normalStateBuffer && light4 < normalOn4 + normalStateBuffer) {
     ledBrightness4 = 0;
     module4NotActivated = true;
     button4 = false;
