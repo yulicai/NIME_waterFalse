@@ -28,31 +28,31 @@ int rawLight1, rawLight2, rawLight3, rawLight4;
 //led varibles for holding averaged values
 int light1, light2, light3, light4;
 float avgScale = 0.95;
-int normalStateBuffer = 50;
+int normalStateBuffer = 30;
 
 
 /* light testing */
-//light 1, normalOn:63, 400-845,
-//light 2, normalOn: 16, 625-725,
-//light 3, normalOn: 33, 430-890,
-//light 4, normalOn: 35, 480-738,
+//light 1, normalOn:13, 35-880,
+//light 2, normalOn: 0, 15-360,
+//light 3, normalOn: 28, 50-820,
+//light 4, normalOn: 0, 38-700,
 
 //need to adjust | influenced by environmental light
-int light1Min = 400;
-int light1Max = 845;
-int light2Min = 625;
-int light2Max = 725;
-int light3Min = 430;
-int light3Max = 890;
-int light4Min = 480;
-int light4Max = 738;
+int light1Min = 35;
+int light1Max = 880;
+int light2Min = 15;
+int light2Max = 360;
+int light3Min = 50;
+int light3Max = 820;
+int light4Min = 40;
+int light4Max = 700;
 /*normal status, with yellow led off*/
 //if min number is a lot more then 100, set normal to 100 or even higher
 //but print the button value in arduino side first before confirm the number
-int normalOn1 = 100;
-int normalOn2 = 70;
-int normalOn3 = 70;
-int normalOn4 = 100;
+int normalOn1 = 17;
+int normalOn2 = 0;
+int normalOn3 = 28;
+int normalOn4 = 0;
 
 boolean module1NotActivated = true;
 boolean module2NotActivated = true;
@@ -139,7 +139,7 @@ void loop() {
   /*module three*/
   /////////////////////////
   //normal yellow led on, no pulling, led strip should be off
-  if (light3 > normalOn3 - normalStateBuffer && light3 < normalOn3 + 7normalStateBuffer0) {
+  if (light3 > normalOn3 - normalStateBuffer && light3 < normalOn3 + normalStateBuffer) {
     ledBrightness3 = 0;
     module3NotActivated = true;
     button3 = false;
